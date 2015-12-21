@@ -16,7 +16,7 @@ gpio.open(Pin1, "output", function(err) {
 });
 
 gpio.open(Pin2, "output", function(err) {
-	var on = 1;
+	var on = 0;
 	console.log('GPIO pin '+Pin2+' is open. toggling LED every 100 mS for 10s');
 	intervalId = setInterval( function(){
   		gpio.write(Pin2, on, function() { // toggle pin between high (1) and low (0)
