@@ -5,7 +5,7 @@ var durationId;
 var Pin1 = 7;
 var Pin2 = 12;
 
-gpio.open(Pin1, "output", function(err)) {
+gpio.open(Pin1, "output", function(err) {
 	var on = 1;
 	console.log('GPIO pin '+Pin1+' is open. toggling LED every 100 mS for 10s');
 	intervalId = setInterval( function(){
@@ -15,7 +15,7 @@ gpio.open(Pin1, "output", function(err)) {
   	}, 100);
 });
 
-gpio.open(Pin2, "output", function(err)) {
+gpio.open(Pin2, "output", function(err) {
 	var on = 1;
 	console.log('GPIO pin '+Pin2+' is open. toggling LED every 100 mS for 10s');
 	intervalId = setInterval( function(){
