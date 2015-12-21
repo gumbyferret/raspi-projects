@@ -22,7 +22,7 @@ gpio.open(Pin2, "output", function(err) {
   		gpio.write(Pin2, on, function() { // toggle pin between high (1) and low (0)
     		on = (on + 1) % 2;
     	});
-  	}, 200);
+  	}, 100);
 });
 
 durationId= setTimeout( function(){
